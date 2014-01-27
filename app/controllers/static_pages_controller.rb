@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 
-  def home <li><%= link_to "Home",    '#' %></li>
+  def home 
   end
 
   def help
