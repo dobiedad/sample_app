@@ -1,3 +1,21 @@
+$navbarBackground: #FFF;
+$navbarBackgroundHighlight: #282828;
+$navbarText: #000000;
+$navbarBrandColor: #FFF;
+$navbarLinkColor: #000000;
+$navbarLinkColorHover: #3300CC;
+$navbarLinkColorActive: #000;
+$navbarLinkBackgroundHover: #000000;
+$navbarLinkBackgroundActive: #FF7F00;
+$navbarSearchBackground: #FFF;
+$navbarSearchBackgroundFocus: #FFF;
+$navbarSearchBorder: #FFF;
+$navbarSearchPlaceholderColor: #FFF;
+
+
+
+
+
 @import "bootstrap";
 
 /* universal */
@@ -8,6 +26,11 @@ html {
 
 body {
   padding-top: 60px;
+ 
+ 
+  background: url('banner.jpg');
+  
+  
 }
 
 section {
@@ -16,6 +39,7 @@ section {
 
 textarea {
   resize: vertical;
+  
 }
 
 .center {
@@ -55,6 +79,7 @@ h2 {
   &:hover {
     color: #f89406;
     text-decoration: none;
+	
   }
 }
 
@@ -67,7 +92,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #f89406;
+  color: #000;
   text-transform: uppercase; 
 
   letter-spacing: -1px;
@@ -75,7 +100,7 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #d9534f;
+    color: #686868;
     text-decoration: none;
   }
 }
@@ -88,7 +113,7 @@ footer {
   a {
     color: #d9534f;
     &:hover {
-      color: #222;
+      color: #686868;
     }
   }
   small {

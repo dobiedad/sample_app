@@ -1,0 +1,40 @@
+<% provide(:title, "Sign in") %>
+<h1>Sign in</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <% end %>
+
+    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+  </div>
+</div>
+
+<body>
+  <!-- AddThis Smart Layers BEGIN -->
+  <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ef8e36755cffe7"></script>
+  <script type="text/javascript">
+    addthis.layers({
+      'theme' : 'dark',
+      'share' : {
+        'position' : 'left',
+        'numPreferredServices' : 5
+      }, 
+      'follow' : {
+        'services' : [
+          {'service': 'facebook', 'id': 'mark'},
+          {'service': 'twitter', 'id': 'levz23'}
+        ]
+      }   
+    });
+  </script>
+  <!-- AddThis Smart Layers END --> </body>
