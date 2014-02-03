@@ -14,7 +14,10 @@
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <% unless signed_in? %>
+	<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+	<% end %>
+	
   </div>
 </div>
 

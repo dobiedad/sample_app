@@ -8,8 +8,10 @@
     <a href="http://spotify.com">SPOTIFY MUSIC</a>
   </h2>
 
+  <% unless signed_in? %>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
- 
+  <% end %>
+
   <!-- sign in form --> 
 
 
