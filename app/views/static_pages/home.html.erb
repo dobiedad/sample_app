@@ -1,5 +1,35 @@
+<% content_for :carousel_section do %>
+	
 <center>
-	<%= image_tag 'b.jpg' %>
+	
+	<div class="carousel slide" id="artists">
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <%= image_tag 'phot1.jpg' %>
+	    </div>
+	    <div class="item">    
+	      <%= image_tag 'photo4.jpg' %>
+	    </div>
+	    <div class="item"> 
+	     <%= image_tag 'fractal1.jpg' %>
+	      
+	    </div>
+	  </div>
+	  <a href="#artists" class="left carousel-control" data-slide="prev">
+	   
+	    <span class="icon-prev"></span>
+	  </a>
+	  <a href="#artists" class="right carousel-control" data-slide="next">
+	   
+	    <span class="icon-next"></span>
+	  </a>
+	</div>
+</center>
+
+<% end %>
+
+<center>
+
 	<div class="">
   <h1>HOME BLA BLA MUSIC LTD</h1>
 
@@ -7,6 +37,7 @@
     MUSIC THINGS BLA BLA
     <a href="http://spotify.com">SPOTIFY MUSIC</a>
   </h2>
+  <h3><p>aaaaaaaaa</p>aaaaaaaaaaa<p>ssssssssss</p>sssssssssss<p></p>ffffffffff<p></p>aaaaaaaaaaa<p></p><p></p></h3>
 
   <% unless signed_in? %>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
@@ -15,8 +46,6 @@
   <!-- sign in form --> 
 
 
-
-  <body>
     <!-- AddThis Smart Layers BEGIN -->
     <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52ef8e36755cffe7"></script>
@@ -35,4 +64,6 @@
         }   
       });
     </script>
-    <!-- AddThis Smart Layers END --> </body>
+    <!-- AddThis Smart Layers END -->
+
+</center>

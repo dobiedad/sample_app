@@ -1,22 +1,26 @@
-$navbarBackground: #FFF;
-$navbarBackgroundHighlight: #282828;
-$navbarText: #000000;
-$navbarBrandColor: #FFF;
-$navbarLinkColor: #000000;
-$navbarLinkColorHover: #3300CC;
-$navbarLinkColorActive: #000;
-$navbarLinkBackgroundHover: #000000;
-$navbarLinkBackgroundActive: #FF7F00;
-$navbarSearchBackground: #FFF;
-$navbarSearchBackgroundFocus: #FFF;
-$navbarSearchBorder: #FFF;
-$navbarSearchPlaceholderColor: #FFF;
+
+
+$grayLight: #ccc;
+$grayLighter: #efefef;
 
 
 
-
-
+   
 @import "bootstrap";
+/* navbar */
+
+.navbar-default {
+    background-color: #262B2F;
+    border-color: #000;
+}
+.navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
+.navbar {min-height:45.5px !important}
+.navbar {
+   background-color: rgba(38, 43, 47, 0.93);
+   
+}
+
+.navbar li { color: #000 } 
 
 /* universal */
 
@@ -24,13 +28,24 @@ html {
   overflow-y: scroll;
 }
 
+.alert-notice {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+}
+
 body {
-  padding-top: 60px;
- 
- 
-  background: image-url('banner.jpg');
-  
-  
+  padding-top: 45.5px;
+  background-color: #262B2F;
+  background-image: image-url('banner.jpg');
+  background-position-y: -150px;
+  background-repeat: repeat-y;
+}
+
+#main {
+    background-image: image-url('banner.jpg');
+    background-position-y: -150px;
+    background-repeat: repeat-y;
 }
 
 section {
@@ -198,4 +213,55 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+
+/*------------------------------------*\
+    $CAROUSEL
+\*------------------------------------*/
+.carousel{
+    overflow:hidden;
+    width:100%;
+}
+.panes{
+    list-style:none;
+    position:relative;
+    width:100%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+        
+    -moz-animation:carousel 1s infinite;
+    -webkit-animation:carousel 1s infinite;
+    animation:carousel 1s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
+}
+.carousel {
+	height: 200px;
+	overflow: hidden;
+}
+
+.carousel img{
+    display:block;
+    width:100%; 
+}
+.carousel h2{
+    font-size:1em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:right;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+html,body {
+  height:100%;
+}
+
+.carousel-inner,.carousel,.item,.container,.fill {
+  width:100%;
 }
