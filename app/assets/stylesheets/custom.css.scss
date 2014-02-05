@@ -3,7 +3,7 @@
 $grayLight: #ccc;
 $grayLighter: #efefef;
 
-
+$navbarCollapseWidth: 769px;
 
    
 @import "bootstrap";
@@ -16,7 +16,7 @@ $grayLighter: #efefef;
 .navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
 .navbar {min-height:45.5px !important}
 .navbar {
-   background-color: rgba(38, 43, 47, 0.93);
+   background-color: rgba(38, 43, 47, 0.5);
    
 }
 
@@ -97,7 +97,19 @@ h2 {
 	
   }
 }
-
+h3 {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #d9534f;
+  &:hover {
+    color: #f89406;
+    text-decoration: none;
+	
+  }
+}
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -107,7 +119,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #000;
+  color: #FFF;
   text-transform: uppercase; 
 
   letter-spacing: -1px;
@@ -142,6 +154,13 @@ footer {
       margin-left: 10px;
     }
   }
+}
+.jumbotron {
+	color: #d9534f;
+	padding: 1em 10em;
+    &:hover {
+      color: #686868;
+   }
 }
 /* mixins, variables, etc. */
 
@@ -239,8 +258,9 @@ input {
     width:20%; /* 100 / number of panes */
 }
 .carousel {
-	height: 200px;
+	height: 400px;
 	overflow: hidden;
+	
 }
 
 .carousel img{
