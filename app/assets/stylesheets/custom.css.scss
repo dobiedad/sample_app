@@ -6,6 +6,7 @@ $grayLighter: #efefef;
 $navbarCollapseWidth: 769px;
 img {
   vertical-align: middle; }
+  
    
 @import "bootstrap";
 /* navbar */
@@ -20,8 +21,13 @@ img {
    background-color: rgba(38, 43, 47, 0.5);
    
 }
-
-.navbar li { color: #000 } 
+/*-- change navbar dropdown color --*/
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+  	background-color: rgba(38, 43, 47, 0.5);
+	 padding-top: 0px;
+    color: #DDD8D8;
+  }
+.navbar li { color: rgba(38, 43, 47, 0.5); } 
 
 /* universal */
 
@@ -251,7 +257,7 @@ input {
     width:20%; /* 100 / number of panes */
 }
 .carousel {
-	height: 680px;
+	height: 1920px;
 	overflow: hidden;
 	
 }
@@ -282,7 +288,7 @@ html,body {
 /* Fade transition for carousel items */
 .carousel .item {
     left: 0 !important;
-      -webkit-transition: opacity 3s; /*adjust timing here */
+      -webkit-transition: opacity 0.5s; /*adjust timing here */
          -moz-transition: opacity 0.5s;
            -o-transition: opacity 0.2s;
               transition: opacity 6s;
@@ -305,5 +311,6 @@ html,body {
     align: middle !important;
 	color:#000;
 }
+
 
 

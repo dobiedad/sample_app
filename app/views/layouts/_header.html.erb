@@ -1,5 +1,5 @@
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -17,7 +17,10 @@
       
 	  <ul class="nav navbar-nav">
         <li class="active"><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
+        
+		
+		
+		<li><%= link_to "Help", help_path %></li>
         <% if signed_in? %>
           <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -26,7 +29,7 @@
             <ul class="dropdown-menu">
               <li><%= link_to "Profile", current_user %></li>
               <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li class="divider"></li>
+             
               <li>
                 <%= link_to "Sign out", signout_path, method: "delete" %>
               </li>
@@ -42,3 +45,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</head>
+
