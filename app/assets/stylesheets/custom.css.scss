@@ -4,7 +4,8 @@ $grayLight: #ccc;
 $grayLighter: #efefef;
 
 $navbarCollapseWidth: 769px;
-
+img {
+  vertical-align: middle; }
    
 @import "bootstrap";
 /* navbar */
@@ -76,7 +77,8 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #f89406 ;
+  color: #7C8083 ;
+  text-decoration: underline;
   &:hover {
     color: #d9534f;
     text-decoration: none;
@@ -90,25 +92,17 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #d9534f;
-  &:hover {
-    color: #f89406;
-    text-decoration: none;
-	
-  }
+  color: #f89406 ;
+ 
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #d9534f;
-  &:hover {
-    color: #f89406;
-    text-decoration: none;
-	
-  }
+  color: #000;
+    
 }
 p {
   font-size: 1.1em;
@@ -156,11 +150,10 @@ footer {
   }
 }
 .jumbotron {
-	color: #d9534f;
-	padding: 1em 10em;
-    &:hover {
-      color: #686868;
-   }
+	color: #EEEEEE;
+	
+    
+   
 }
 /* mixins, variables, etc. */
 
@@ -248,9 +241,9 @@ input {
     width:100%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
         
-    -moz-animation:carousel 1s infinite;
-    -webkit-animation:carousel 1s infinite;
-    animation:carousel 1s infinite;
+    -moz-animation:carousel 0.5s infinite;
+    -webkit-animation:carousel 0.5s infinite;
+    animation:carousel 0.5s infinite;
 }
 .panes > li{
     position:relative;
@@ -258,10 +251,11 @@ input {
     width:20%; /* 100 / number of panes */
 }
 .carousel {
-	height: 400px;
+	height: 600px;
 	overflow: hidden;
 	
 }
+
 
 .carousel img{
     display:block;
@@ -285,3 +279,31 @@ html,body {
 .carousel-inner,.carousel,.item,.container,.fill {
   width:100%;
 }
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity 3s; /*adjust timing here */
+         -moz-transition: opacity 0.5s;
+           -o-transition: opacity 0.2s;
+              transition: opacity 6s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+.thumbnail{
+    align: middle !important;
+	color:#000;
+}
+
+

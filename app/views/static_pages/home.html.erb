@@ -6,10 +6,42 @@
     MUSIC THINGS BLA BLA
     <a href="http://spotify.com">SPOTIFY MUSIC</a>
   </h2>
-  <h3><p>aaaaaaaaa</p>aaaaaaaaaaa<p>ssssssssss</p>sssssssssss<p></p>ffffffffff<p></p>aaaaaaaaaaa<p></p><p></p></h3>
 
+  
+  <% content_for :carousel_section do %>
+	
+
+  	<div class="carousel slide" id="mountains" data-ride="carousel">
+  	  <div class="carousel-inner">
+  	    <div class="item active">
+			
+  	      <%= image_tag 'Car1.jpg' %>
+  	    </div>
+  	    <div class="item">    
+  	      <%= image_tag 'car2.jpg' %>
+  	    </div>
+  	    <div class="item"> 
+  	     <%= image_tag 'car3.jpg' %>
+	      
+  	    </div>
+  	  </div>
+	  
+  	  <a href="#artists" class="left carousel-control" data-slide="prev">
+	   
+  	    <span class="icon-prev"></span>
+  	  </a>
+  	  <a href="#artists" class="right carousel-control" data-slide="next">
+	   
+  	    <span class="icon-next"></span>
+  	  </a>
+	
+  </div>
+
+  <% end %>
+ 
+  
   <% unless signed_in? %>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+  <%= link_to "About Us!", about_path, class: "btn btn-large btn-primary" %>
   <% end %>
 
   <!-- sign in form --> 

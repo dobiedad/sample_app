@@ -1,41 +1,50 @@
 <% provide(:title, 'About Us') %>
-<% content_for :carousel_section do %>
-	
 
-	<div class="carousel slide" id="mountains" data-ride="carousel">
-	  <div class="carousel-inner">
-	    <div class="item active">
-			
-	      <%= image_tag 'Car1.jpg' %>
-	    </div>
-	    <div class="item">    
-	      <%= image_tag 'car2.jpg' %>
-	    </div>
-	    <div class="item"> 
-	     <%= image_tag 'car3.jpg' %>
-	      
-	    </div>
-	  </div>
-	  
-	  <a href="#artists" class="left carousel-control" data-slide="prev">
-	   
-	    <span class="icon-prev"></span>
-	  </a>
-	  <a href="#artists" class="right carousel-control" data-slide="next">
-	   
-	    <span class="icon-next"></span>
-	  </a>
-	
-</div>
 
-<% end %>
   <center>  
-	  <h1>Feel free to contact us</h1>
+	<u> <b> <h1>CONTACT</h1></b></u>
 
 	   <h2>
 	     MUSIC THINGS BLA BLA
 	     <a href="http://spotify.com">SPOTIFY MUSIC</a>
 	   </h2>
+	   <div class="carousel slide" id="mountains" data-ride="carousel">
+	     <div class="carousel-inner">
+	       <div class="item active">
+	     <div class="row">
+	       <div class=" col-xs-4">
+	         <div class="thumbnail">
+	     <%= image_tag 'Fractal.jpg' %>
+	           <div class="caption">
+	             <h3>Club Nights</h3>
+	             <p>Lalalallalalaala</p>
+	   		  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-warning" %>
+	           </div>
+	         </div>
+	       </div>
+
+	       <div class="col-xs-4">
+	         <div class="thumbnail">
+	           <%= image_tag 'fractal1.jpg' %>
+	           <div class="caption">
+	             <h3>Art Galleries</h3>
+	             <p>Lalalalalalalal</p>
+	   		  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-danger" %>
+	           </div>
+	         </div>
+	       </div>
+
+	       <div class="col-xs-4">
+	         <div class="thumbnail">
+	           <%= image_tag 'fractal2.jpg' %>
+	           <div class="caption">
+	             <h3>Science</h3>
+	             <p>Lalalalalalalal</p>
+	   		  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-success" %>
+	           </div>
+	         </div>
+	       </div>
+	     </div>
    <a class="btn btn-primary" href="mailto:xxxxxx@whatever.com?subject=yyyyyyyyy Photography">Email Us</a>
 </center>
 </form>
