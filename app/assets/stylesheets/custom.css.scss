@@ -3,8 +3,10 @@
 $grayLight: #ccc;
 $grayLighter: #efefef;
 
-
-
+$navbarCollapseWidth: 769px;
+img {
+  vertical-align: middle; }
+  
    
 @import "bootstrap";
 /* navbar */
@@ -16,11 +18,16 @@ $grayLighter: #efefef;
 .navbar-nav > li > a {padding-top:10px !important; padding-bottom:10px !important;}
 .navbar {min-height:45.5px !important}
 .navbar {
-   background-color: rgba(38, 43, 47, 0.93);
+   background-color: rgba(38, 43, 47, 0.5);
    
 }
-
-.navbar li { color: #000 } 
+/*-- change navbar dropdown color --*/
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+  	background-color: rgba(38, 43, 47, 0.5);
+	 padding-top: 0px;
+    color: #DDD8D8;
+  }
+.navbar li { color: rgba(38, 43, 47, 0.5); } 
 
 /* universal */
 
@@ -76,7 +83,8 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #f89406 ;
+  color: #7C8083 ;
+  text-decoration: underline;
   &:hover {
     color: #d9534f;
     text-decoration: none;
@@ -90,14 +98,18 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #d9534f;
-  &:hover {
-    color: #f89406;
-    text-decoration: none;
-	
-  }
+  color: #f89406 ;
+ 
 }
-
+h3 {
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000;
+    
+}
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -107,7 +119,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #000;
+  color: #FFF;
   text-transform: uppercase; 
 
   letter-spacing: -1px;
@@ -142,6 +154,14 @@ footer {
       margin-left: 10px;
     }
   }
+}
+.jumbotron {
+	color: rgba(38, 43, 47, 0.5);
+	padding-right: 50px;
+	padding-left: 50px;
+	
+    
+   
 }
 /* mixins, variables, etc. */
 
@@ -229,9 +249,9 @@ input {
     width:100%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
         
-    -moz-animation:carousel 1s infinite;
-    -webkit-animation:carousel 1s infinite;
-    animation:carousel 1s infinite;
+    -moz-animation:carousel 0.5s infinite;
+    -webkit-animation:carousel 0.5s infinite;
+    animation:carousel 0.5s infinite;
 }
 .panes > li{
     position:relative;
@@ -239,9 +259,11 @@ input {
     width:20%; /* 100 / number of panes */
 }
 .carousel {
-	height: 200px;
+	height: 800px;
 	overflow: hidden;
+	
 }
+
 
 .carousel img{
     display:block;
@@ -265,6 +287,7 @@ html,body {
 .carousel-inner,.carousel,.item,.container,.fill {
   width:100%;
 }
+
 /* Users index */
 
 .users {
@@ -278,4 +301,31 @@ html,body {
       border-bottom: 1px solid $grayLighter;
     }
   }
+}
+
+/* Fade transition for carousel items */
+.carousel .item {
+    left: 0 !important;
+      -webkit-transition: opacity 0.5s; /*adjust timing here */
+         -moz-transition: opacity 0.5s;
+           -o-transition: opacity 0.2s;
+              transition: opacity 6s;
+}
+.carousel-control {
+    background-image: none !important; /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.active.left,
+.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+.thumbnail{
+    align: middle !important;
+	color:#000;
 }

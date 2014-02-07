@@ -1,3 +1,5 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -15,7 +17,10 @@
       
 	  <ul class="nav navbar-nav">
         <li class="active"><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Help", help_path %></li>
+        
+		
+		
+		<li><%= link_to "Help", help_path %></li>
         <% if signed_in? %>
 		<li><%= link_to "Users", users_path %></li>
           <li id="fat-menu" class="dropdown">
@@ -41,3 +46,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</head>
+
