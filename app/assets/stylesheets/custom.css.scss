@@ -288,20 +288,6 @@ html,body {
   width:100%;
 }
 
-/* Users index */
-
-.users {
-  list-style: none;
-  margin: 0;
-  li {
-    overflow: auto;
-    padding: 10px 0;
-    border-top: 1px solid $grayLighter;
-    &:last-child {
-      border-bottom: 1px solid $grayLighter;
-    }
-  }
-}
 
 /* Fade transition for carousel items */
 .carousel .item {
@@ -328,4 +314,18 @@ html,body {
 .thumbnail{
     align: middle !important;
 	color:#000;
+}
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
