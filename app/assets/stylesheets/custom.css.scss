@@ -156,7 +156,9 @@ footer {
   }
 }
 .jumbotron {
-	color: #EEEEEE;
+	color: rgba(38, 43, 47, 0.5);
+	padding-right: 50px;
+	padding-left: 50px;
 	
     
    
@@ -257,7 +259,7 @@ input {
     width:20%; /* 100 / number of panes */
 }
 .carousel {
-	height: 1920px;
+	height: 800px;
 	overflow: hidden;
 	
 }
