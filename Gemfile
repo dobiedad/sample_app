@@ -9,6 +9,8 @@ gem 'bootstrap-will_paginate', '0.0.9'
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 'foundation-rails'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'growl', '1.0.3'
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
